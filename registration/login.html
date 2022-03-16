@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+<body>
+
+<style>
+    label{
+        display: block;
+        width: 200px;
+        float: left;
+        text-align: right;
+        margin: 10px 5px;
+        clear: left;
+    }
+    input,select,textarea{
+        margin: 10px 5px;
+        vertical-align: middle;
+    }
+    .checks{
+        vertical-align: bottom;
+    }
+    #submit{
+        margin-left: 200px;
+    }
+    </style>
+    </head>
+    <body style="background-image:url(blank.png)">
+        <div class="container text-center"style="margin-top:20px;">
+            <div class="card" style="margin-top: 120px; width: 500px; height: 300px; margin: auto;">
+        <div class="card">
+        <h1 style="text-align: center;margin-top: 20px;">Login</h1>
+        <Form action="form-submit.php" method="get">
+            <label >Email</label>
+            <input type="Email" name="Email" placeholder="enter a valid email address" required/>
+            <br/>
+            <label>Password</label>
+            <input type="Password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            placeholder="Enter password" required/>
+            <br/>
+        <button type="submit"  class="btn btn-primary">Login</button>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
